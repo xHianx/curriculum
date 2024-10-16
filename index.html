@@ -4,7 +4,7 @@
         <title>My Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
     </head>
     <body>
         <header>
@@ -22,48 +22,62 @@
         </nav>
         <main>
             <section id="resumen">
-                <h2>Resumen</h2>
-                <img src="C:\Users\CltControl\Documents\GitHub\curriculum\descarga.png" alt="Imagen MIA" width="210" height="250"/><p>Cristhian</p>
+                <h2 class="subtitle">Resumen</h2>
+                <img id="photo" src="https://placehold.co/600x400" alt="photo">
                 <p>Me llamo Cristhian Joseph Barragan Guillin, tengo 22 años y soy actualmente estudiante de la carrera de ingenieria de Computación en Espol. Considero que soy una persona a la cual le gusta aprender cosas nuevas y compartir y a apoyar a las personas con las cosas que se.</p>
             </section>
 
+
             <section id="experiencia">
-                <h2>Experiencia</h2>
+                <h2 class="subtitle">Experiencia</h2>
             </section>
 
             <section id="educacion">
-                <h2>Educación</h2>
+                <h2 class="subtitle">Educación</h2>
+                <p>Soy estudiante de la Escuela Superior Politecnica del Litoral(ESPOL)</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3987.0234368411557!2d-79.96960647601988!3d-2.144708537164793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sESPOL%20FIEC!5e0!3m2!1ses-419!2sec!4v1728501384303!5m2!1ses-419!2sec" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
             <section id="habilidades">
-                <h2>Habilidades</h2>
+                <h2 class="subtitle">Habilidades</h2>
             </section>
             
             <section id="proyectos">
-                <h2>Proyectos</h2>
+                <h2 class="subtitle">Proyectos</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/T9GFyZ5LREQ?si=KEW_sDq0_RBz-RDR&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section>
         </main>
-        <h2>Formulario</h2>
-        <form action="" method="get" class="form-example">
-            <div class="form-example">
-              <label for="name">Enter your name: </label>
-              <input type="text" name="name" id="name" required />
-            </div>
-            <div class="form-example">
-              <label for="email">Enter your email: </label>
-              <input type="email" name="email" id="email" required />
-            </div>
-            <fieldset>
-                <legend>Do you agree to the terms?</legend>
-                <label><input type="radio" name="radio" value="yes" /> Yes</label>
-                <label><input type="radio" name="radio" value="no" /> No</label>
-            </fieldset>
-            <div class="form-example">
-              <input type="submit" value="Subscribe!" />
-            </div>
-          </form>
+        
+        <form>
+            <h2 class="subtitle">Formulario</h2>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="experiencia">Experiencia Laboral:</label>
+            <textarea id="experiencia" name="experiencia" rows="5"
+            required></textarea>
+            <label for="educacion">Educación:</label>
+            <textarea id="educacion" name="educacion" rows="5"
+            required></textarea>
+            <div><label>Habilidades Técnicas:</label><br></div>
+            <!--<input type="checkbox" name="habilidades" value="HTML"> HTML-->
+            <div> <input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span> </div>
+            <!--<input type="checkbox" name="habilidades" value="CSS"> CSS
+            <input type="checkbox" name="habilidades" value="JavaScript">JavaScript-->
+            <div> <input type="checkbox" name="habilidades" value="CSS"> <span>CSS</span> </div>
+            <div> <input type="checkbox" name="habilidades" value="JavaScript"> <span>JavaScript</span> </div>
+
+
+            <label for="intereses">Intereses:</label>
+            <select id="intereses" name="intereses">
+            <option value="desarrollo">Desarrollo Web</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="marketing">Marketing Digital</option>
+            </select>
+            <button type="submit">Enviar</button>
+            </form>
+            
         <footer>
             <p>©Cristhian Barragan - 2024</p>
             <ul>

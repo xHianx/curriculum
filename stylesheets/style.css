@@ -1,0 +1,127 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+#photo {
+    width: 200px;
+}
+.subtitle{
+    color: rgb(107 114 128 / 0.89);
+    text-transform: uppercase; 
+}
+section {
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px; 
+ 
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd; 
+
+ 
+    /* relleno (espacio interno) de 
+    1.5% en la parte superior e inferior y 
+    0.8% a los lados derecho e izquierdo. */
+ 
+    padding: 1.5% 0.8%; 
+ 
+    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
+    dándoles un valor específico de 1.2% para esos lados. */
+ 
+    padding-left: 1.2%; 
+    padding-right: 1.2%; 
+
+    /* borde redondeado con un radio de 5 píxeles */
+
+   /* en navegadores basados en WebKit, 
+   como versiones antiguas de Safari y Chrome. */
+   -webkit-border-radius: 11px; 
+
+   /* en navegadores antiguos de Mozilla, 
+   como Firefox.  */
+   -moz-border-radius: 11px;    
+
+   /* en navegadores modernos. */
+   border-radius: 11px;         
+ }
+ form{
+    
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px; 
+ 
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd; 
+
+ 
+    /* relleno (espacio interno) de 
+    1.5% en la parte superior e inferior y 
+    0.8% a los lados derecho e izquierdo. */
+ 
+    padding: 1.5% 0.8%; 
+ 
+    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
+    dándoles un valor específico de 1.2% para esos lados. */
+ 
+    padding-left: 1.2%; 
+    padding-right: 1.2%; 
+
+    /* borde redondeado con un radio de 5 píxeles */
+
+   /* en navegadores basados en WebKit, 
+   como versiones antiguas de Safari y Chrome. */
+   -webkit-border-radius: 11px; 
+
+   /* en navegadores antiguos de Mozilla, 
+   como Firefox.  */
+   -moz-border-radius: 11px;    
+
+   /* en navegadores modernos. */
+   border-radius: 11px;
+ }
+ 
+ nav ul {
+
+    /* Modelo de diseño flexible */
+    display: flex;									
+    justify-content: space-around;
+   
+}
+
+form {
+
+    /* Modelo de diseño en cuadrícula */
+    display: grid;									
+    row-gap: 0.5rem;
+
+}
+
+#resumen {
+
+    /* Modelo de diseño en cuadrícula */
+  display: grid;
+
+  /* Distribuye el espacio entre y alrededor
+             de los items en el eje principal */
+    justify-content: space-around;
+
+    /* Alineación de un elemento dentro del bloque
+        que lo contiene, considerando el eje transversal */
+    align-items: stretch;
+
+    /* Plantilla con áreas en la cuadrícula */
+    grid-template-areas: "A C" 
+                         "B D";
+}
+
+#resumen h2 {
+  grid-area: A;
+}
+#resumen img {
+  grid-area: B;
+}
+#resumen p {
+  grid-area: D;
+}
