@@ -112,7 +112,7 @@ form {
     align-items: stretch;
 
     /* Plantilla con áreas en la cuadrícula */
-    grid-template-areas: "A C" 
+    grid-template-areas: "A D" 
                          "B D";
 }
 
@@ -120,8 +120,10 @@ form {
   grid-area: A;
 }
 #resumen img {
-  grid-area: B;
-}
-#resumen p {
   grid-area: D;
 }
+#resumen p {
+  grid-area: B;
+}
+
+
