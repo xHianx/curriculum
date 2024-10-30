@@ -415,3 +415,86 @@ footer a:hover {
 .project-link-icon {
   font-size: 2em;
 }
+
+.education-card {
+  display: block;
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: inherit; /* Mantiene el color del texto */
+}
+
+.education-card:hover {
+  transform: scale(1.05); /* Agrandar ligeramente */
+  background-color: rgba(0, 0, 0, 0.1); /* Oscurecer ligeramente */
+}
+
+.skill-card {
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05); /* Agrandar ligeramente */
+  background-color: rgba(0, 0, 0, 0.05); /* Oscurecer ligeramente */
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+  nav ul li {
+      text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .content-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .skills-cards, .projects-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .form-row {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-form button:hover {
+  background-color: #0a254a;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.progress.loaded {
+  width: 80%; /* el porcentaje que deseas */
+}
