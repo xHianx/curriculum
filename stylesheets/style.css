@@ -251,7 +251,7 @@ footer a:hover {
   padding-bottom: 5px;
 }
 
-/* Sección de Contáctame */
+/* Contenedor de Contacto */
 #contactame {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
@@ -267,9 +267,22 @@ footer a:hover {
   gap: 15px;
 }
 
+/* Filas de entrada de formulario */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form label {
   font-weight: bold;
   color: #0d3364;
+  margin-bottom: 5px;
 }
 
 .contact-form input,
